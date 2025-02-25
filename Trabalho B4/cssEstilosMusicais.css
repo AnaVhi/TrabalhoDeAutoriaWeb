@@ -1,0 +1,147 @@
+body {
+    background-size: cover; /* Cobre toda a área */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede repetição da imagem */
+    background-color: rgb(0, 0, 0); /* Cor de fundo alternativa */
+    background-attachment: fixed; /* Imagem fixa durante o scroll */
+    position: relative; /* Permite que o rodapé fique fixado ao final */
+    min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+    padding-bottom: 60px; /* Espaço para o rodapé não ficar sobreposto ao conteúdo */
+  }
+
+  .bg-gif {
+    background-image: url('GIF.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rock-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  }
+
+  .faixa {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .band-img {
+    width: 120%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin: 10px 0;
+  }
+
+  .band-img:hover {
+    transform: scale(1.05);
+  }
+
+  .img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .img-container:hover .img-overlay {
+    opacity: 1;
+  }
+
+  .hero-section {
+    background: url('https://via.placeholder.com/1200x500?text=Hero+Section') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
+  }
+
+  .hero-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+  }
+
+  .img-medium {
+    height: 250px;
+  }
+
+  .navbar {
+    background:  #1b1b1b; 
+    padding: 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  table {
+    background-color: transparent !important;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    border: none !important;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #fffefe;
+    color: #fff;
+    align-items: center;
+  }
+
+  .texto-tabela {
+    width: 650px;
+    color: #fff;
+  }
+
+  .textosbandas {
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+
+  /* Rodapé - Faz o rodapé ocupar toda a largura da tela */
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
